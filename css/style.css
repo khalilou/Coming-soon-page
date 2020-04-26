@@ -33,6 +33,10 @@ body {
 	width: 200px;
 }
 
+.inner-container {
+	max-width: 400px;
+}
+
 h1 {
 	color: hsl(0, 6%, 24%);
 	font-size: 60px;
@@ -52,6 +56,7 @@ form {
 p {
 	color: hsl(0, 36%, 70%);
 	line-height: 26px;
+	margin: 40px 0;
 }
 
 input {
@@ -62,6 +67,10 @@ input {
 	padding: 15px;
 	height: 55px;
 	width: 100%;
+}
+
+form.error input {
+	border: 2px solid hsl(0, 93%, 68%);
 }
 
 button {
@@ -77,10 +86,18 @@ button {
 	width: 100px;
 }
 
+button:hover {
+	background-image: linear-gradient(135deg, hsl(0,36%,70%), hsl(0,93%,68%));
+}
+
 .error {
 	position: absolute;
 	top: 15px;
 	right: 120px;
+}
+
+form.error input {
+	border: 2px solid hsl(0,93%,68%);
 }
 
 small {
